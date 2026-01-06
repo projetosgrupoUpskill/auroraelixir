@@ -520,6 +520,24 @@ body {
     display: none; 
 }
 
+/* Modal */
+
+/* Ajustes finos no modal */
+.modal-content {
+    border-radius: 12px;
+}
+
+.modal-title {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.modal-body p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
 @media (max-width: 968px) {
     .flavors-wrapper {
         grid-template-columns: 1fr;
