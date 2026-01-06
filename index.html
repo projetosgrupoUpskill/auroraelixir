@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/styleNatalia.css">
+    <link rel="stylesheet" href="./assets/css/styleRebecca.css">
+
     <title>Aurora Elixir - Energia Limpa</title>
 </head>
 
@@ -13,7 +18,7 @@
     <!-- HEADER - NAVIGATION - BANNER -->
     <nav class="navbar">
         <div class="logo">
-            <img class="logo-icon" src="img/icone_logo.svg">
+            <img class="logo-icon" src="./assets/img/icone_logo.svg">
             <div class="logo-text">Aurora Elixir</div>
         </div>
 
@@ -51,6 +56,191 @@
         </div>
     </section>
 
+        <!-- Parte: Escolha sua energia -->
+        <section class="flavors-section">
+            <div class="container container-flavors">
+                <h1 class="title">Escolha Sua Energia</h1>
+                <p class="subtitle">Cada sabor, uma experiência única</p>
+    
+                <div class="flavors-wrapper">
+                    <div class="flavors-cards-grid">
+                        <div class="flavors-card active" data-flavor="aurora">
+                            <div class="flavors-icon">
+                                <i class="bi bi-flower1"></i>
+                            </div>
+                            <h3 class="flavors-title">Aurora</h3>
+                            <p class="flavors-description">Manga & Maracujá</p>
+                        </div>
+    
+                        <div class="flavors-card" data-flavor="forest">
+                            <div class="flavors-icon">
+                                <i class="bi bi-tree"></i>
+                            </div>
+                            <h3 class="flavors-title">Forest</h3>
+                            <p class="flavors-description">Menta & Limão</p>
+                        </div>
+    
+                        <div class="flavors-card " data-flavor="ocean">
+                            <div class="flavors-icon">
+                                <i class="bi bi-water"></i>
+                            </div>
+                            <h3 class="flavors-title">Ocean</h3>
+                            <p class="flavors-description">Frutos Tropicais</p>
+                        </div>
+    
+                        <div class="flavors-card " data-flavor="sunset">
+                            <div class="flavors-icon">
+                                <i class="bi bi-brightness-high"></i>
+                            </div>
+                            <h3 class="flavors-title">Sunset</h3>
+                            <p class="flavors-description">Frutas Vermelhas</p>
+                        </div>
+                    </div>
+    
+                    <div class="flavors-detail">
+                        <div class="flavor-detail active" id="aurora">
+                            <div class="detail-card">
+                                <div class="detail-icon">
+                                    <i class="bi bi-flower1"></i>
+                                </div>
+                                <div>
+                                    <h2>Aurora</h2>
+                                    <p class="detail-subtitle">Manga & Maracujá</p>
+                                </div>
+                            </div>
+    
+                            <span class="badge-datail">Tropical e Energizante</span>
+    
+                            <p class="detail-description">
+                                Sabor vibrante com notas cítricas e doce natural.
+                                Perfeito para começar o dia com energia tropical.
+                            </p>
+    
+                            <div class="detail-benefits">
+                                <h4>Benefícios:</h4>
+                                <ul>
+                                    <li><i class="bi bi-stars"></i>Energia imediata</li>
+                                    <li><i class="bi bi-stars"></i>Rico em vitamina C</li>
+                                    <li><i class="bi bi-stars"></i>Digestão facilitada</li>
+                                </ul>
+                            </div>
+    
+                            <div class="ideal-time">
+                                <span class="time-label">Ideal para:</span>
+                                <span class="time-badge">Manhãs ativas</span>
+                            </div>
+    
+                            <p class="details-recommendation">
+                                Ideal para quem busca um despertar tropical e cheio de
+                                vitalidade. Perfeito antes de treinos ou para começar o dia.
+                            </p>
+    
+                            <button class="details-button">Experimentar Aurora</button>
+                        </div>
+                        <div class="flavor-detail" id="forest">
+                            <div class="detail-card">
+                                <div class="detail-icon">
+                                    <i class="bi bi-tree"></i>
+                                </div>
+                                <div>
+                                    <h2>Forest</h2>
+                                    <p class="detail-subtitle">Menta & Limão</p>
+                                </div>
+                            </div>
+                            <span class="badge-datail">Refrescante e Revitalizante</span>
+                            <p class="detail-description">
+                                Combinação refrescante que desperta os sentidos.
+                                A frescura da menta com o toque cítrico do limão.
+                            </p>
+                            <div class="detail-benefits">
+                                <h4>Benefícios:</h4>
+                                <ul>
+                                    <li><i class="bi bi-stars"></i>Foco mental</li>
+                                    <li><i class="bi bi-stars"></i>Sensação refrescante</li>
+                                    <li><i class="bi bi-stars"></i>Antioxidantes naturais</li>
+                                </ul>
+                            </div>
+                            <div class="ideal-time">
+                                <span class="time-label">Ideal para:</span>
+                                <span class="time-badge">Tardes produtivas</span>
+                            </div>
+                            <p class="details-recommendation">
+                                Perfeito para momentos que exigem concentração e
+                                clareza mental. Ideal para o trabalho ou estudos.
+                            </p>
+                            <button class="details-button">Experimentar Forest</button>
+                        </div>
+                        <div class="flavor-detail" id="ocean">
+                            <div class="detail-card">
+                                <div class="detail-icon">
+                                    <i class="bi bi-water"></i>
+                                </div>
+                                <div>
+                                    <h2>Ocean</h2>
+                                    <p class="detail-subtitle">Frutos Tropicais</p>
+                                </div>
+                            </div>
+                            <span class="badge-datail">Exótico e Equilibrado</span>
+                            <p class="detail-description">
+                                Uma onda de sabores tropicais que transporta você
+                                para praias paradisíacas com cada gole.
+                            </p>
+                            <div class="detail-benefits">
+                                <h4>Benefícios:</h4>
+                                <ul>
+                                    <li><i class="bi bi-stars"></i>Hidratação completa</li>
+                                    <li><i class="bi bi-stars"></i>Mix de vitaminas</li>
+                                    <li><i class="bi bi-stars"></i>Energia equilibrada</li>
+                                </ul>
+                            </div>
+                            <div class="ideal-time">
+                                <span class="time-label">Ideal para:</span>
+                                <span class="time-badge">Pós-treino</span>
+                            </div>
+                            <p class="details-recommendation">
+                                Ideal para recuperação após atividades físicas ou
+                                para momentos de relaxamento energizado.
+                            </p>
+                            <button class="details-button">Experimentar Ocean</button>
+                        </div>
+                        <div class="flavor-detail" id="sunset">
+                            <div class="detail-card">
+                                <div class="detail-icon">
+                                    <i class="bi bi-brightness-high"></i>
+                                </div>
+                                <div>
+                                    <h2>Sunset</h2>
+                                    <p class="detail-subtitle">Frutas Vermelhas</p>
+                                </div>
+                            </div>
+                            <span class="badge-datail">Doce e Antioxidante</span>
+                            <p class="detail-description">
+                                Explosão de sabor com frutas vermelhas maduras.
+                                Doçura natural e energia prolongada.
+                            </p>
+                            <div class="detail-benefits">
+                                <h4>Benefícios:</h4>
+                                <ul>
+                                    <li><i class="bi bi-stars"></i>Alto teor de antioxidantes</li>
+                                    <li><i class="bi bi-stars"></i>Energia sustentada</li>
+                                    <li><i class="bi bi-stars"></i>Sabor adocicado natural</li>
+                                </ul>
+                            </div>
+                            <div class="ideal-time">
+                                <span class="time-label">Ideal para:</span>
+                                <span class="time-badge">Qualquer momento</span>
+                            </div>
+                            <p class="details-recommendation">
+                                Versátil para qualquer hora do dia. Perfeito para
+                                quem busca energia com sabor marcante e agradável.
+                            </p>
+                            <button class="details-button">Experimentar Sunset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     <!-- ENERGIA VERDADEIRA -->
     <section class="product-info" id="beneficios">
@@ -58,7 +248,7 @@
         <p>Sem compromissos. Apenas o melhor da natureza.</p>
         <div class="cards-grid">
         <div class="card" id="card1">
-            <img src="img/card_ingredientes.png" alt="foto de ingredientes encontrados na preparação do produto">
+            <img src="./assets/img/card_ingredientes.png" alt="foto de ingredientes encontrados na preparação do produto">
             <div class="card-icons"><i class="bi bi-leaf"></i></div>
             <div class="container-text">
                 <h3><b>Ingredientes Naturais</b></h3>
@@ -67,7 +257,7 @@
         </div>
 
         <div class="card" id="card2">
-            <img src="img/card_acucar.png" alt="foto de ingredientes como mel, açúcar e frutas">
+            <img src="./assets/img/card_acucar.png" alt="foto de ingredientes como mel, açúcar e frutas">
             <div class="card-icons"><i class="bi bi-droplet"></i></div>
             <div class="container-text">
                 <h3><b>Sem Açúcar</b></h3>
@@ -76,7 +266,7 @@
         </div>
 
         <div class="card" id="card3">
-            <img src="img/card_foco.png" alt="foto de um chá e um recipiente">
+            <img src="./assets/img/card_foco.png" alt="foto de um chá e um recipiente">
             <div class="card-icons"><i class="bi bi-brilliance"></i></div>
             <div class="container-text">
                 <h3><b>Foco Mental</b></h3>
@@ -86,7 +276,7 @@
         </div>
 
         <div class="card" id="card4">
-            <img src="img/card_embalagem.png" alt="foto de embalagens recicláveis">
+            <img src="./assets/img/card_embalagem.png" alt="foto de embalagens recicláveis">
             <div class="card-icons"><i class="bi bi-recycle"></i></div>
             <div class="container-text">
                 <h3><b>Embalagem Eco</b></h3>
@@ -98,8 +288,67 @@
         </div>
     </section>
 
-  <!--   CONTADOR -->
-      <div class="box" id="lancamento">
+    <!--     Parte: Nossa Historia -->
+    <section class="history">
+        <span class="history-tag">SOBRE NÓS</span>
+        <h1 class="title">A Nossa História</h1>
+        <p class="subtitle">Nascemos da necessidade de criar uma alternativa saudável às bebidas energéticas
+            tradicionais.</p>
+
+        <div class="history-content">
+            <img src="./assets/img/nossa historia.png" alt="Garrafas Aurora Elixir" class="img-history">
+
+            <article class="history-text">
+                <h2>Energia que Respeita o Seu Corpo</h2>
+                <p>Aurora Elixir foi criado por nutricionistas e cientistas apaixonados por bem-estar. Cansados de ver
+                    bebidas energéticas cheias de cafeína, açúcar e ingredientes artificiais, decidimos criar algo
+                    diferente.</p>
+                <p>Após anos de pesquisa, desenvolvemos uma fórmula única à base de plantas adaptogênicas, vitaminas B
+                    naturais e extratos botânicos que proporcionam energia sustentada sem os efeitos colaterais
+                    negativos.</p>
+                <span class="badge-history">
+                    <i class="bi bi-leaf"></i> 100% Ingredientes Naturais
+                </span>
+            </article>
+        </div>
+
+        <section class="section-values">
+            <h2>Os Nossos Valores</h2>
+
+            <div class="values-cards">
+                <article class="card-value" data-valor="sustentabilidade">
+                    <div class="value-icon"><i class="bi bi-leaf-fill"></i></div>
+                    <h3>Sustentabilidade</h3>
+                    <p class="value-description">Comprometidos com o planeta através de ingredientes orgânicos e
+                        embalagens 100% recicláveis.</p>
+                </article>
+
+                <article class="card-value" data-valor="saude">
+                    <div class="value-icon"><i class="bi bi-heart"></i></div>
+                    <h3>Saúde Natural</h3>
+                    <p class="value-description">Energia limpa sem cafeína, açúcar ou aditivos artificiais. Apenas o
+                        melhor da natureza.</p>
+                </article>
+
+                <article class="card-value" data-valor="inovacao">
+                    <div class="value-icon"><i class="bi bi-stars"></i></div>
+                    <h3>Inovação</h3>
+                    <p class="value-description">Combinamos ciência moderna com sabedoria ancestral para criar uma
+                        bebida revolucionária.</p>
+                </article>
+
+                <article class="card-value" data-valor="transparencia">
+                    <div class="value-icon"><i class="bi bi-vinyl"></i></div>
+                    <h3>Transparência</h3>
+                    <p class="value-description">Cada ingrediente tem um propósito. Sabemos de onde vem tudo o que
+                        colocamos em Aurora Elixir.</p>
+                </article>
+            </div>
+        </section>
+    </section>
+
+<!--   CONTADOR -->
+    <div class="box" id="lancamento">
         <div class="header">
             <div class="badge">
                 <i class="bi bi-clock-history"></i>
@@ -131,10 +380,140 @@
         <button class="cta-button">Notificar-me do Lançamento</button>
     </div>
 
+    <!--     Perguntas frequentes -->
+    <section class="container py-5">
+        <div class="accordion-container  text-center mb-5">
+            <small class="text-success fw-bold">
+                <i class="bi bi-question-circle"></i> DÚVIDAS
+            </small>
+            <h1 class="title text-green-dark display-4 mt-2">Perguntas Frequentes</h1>
+            <p class="text-muted">Tudo o que você precisa saber sobre Aurora Elixir</p>
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button">
+                        O que é Aurora Elixir?
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Aurora Elixir é uma bebida funcional natural criada para fornecer energia equilibrada, sem
+                        cafeína, utilizando ingredientes de origem vegetal.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button">
+                        Como funciona sem cafeína?
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        A energia vem de vitaminas, minerais e extratos naturais que estimulam o metabolismo sem causar
+                        picos ou ansiedade.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button">
+                        Quais são os ingredientes principais?
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Frutas tropicais, vitaminas do complexo B, vitamina C e extratos naturais antioxidantes.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button">
+                        Quantas calorias tem?
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Aurora Elixir tem apenas 15 calorias por lata (330ml), sem açúcares adicionados. É a escolha perfeita para quem busca energia sem comprometer objetivos de saúde e bem-estar.'
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button">
+                        Quando vou sentir o efeito?
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Os efeitos começam a ser sentidos entre 15-30 minutos após o consumo e duram de 4 a 6 horas. Diferente da cafeína, a energia é gradual e sustentada, sem picos ou quedas bruscas.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button">
+                        É seguro consumir diariamente?
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Sim! Aurora Elixir foi formulado para consumo diário seguro. Recomendamos 1-2 latas por dia. Sempre consulte um profissional de saúde se tiver condições médicas específicas ou estiver grávida/amamentando.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button">
+                        Onde posso comprar?
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        No lançamento, Aurora Elixir estará disponível em nossa loja online e em parceiros selecionados. Cadastre-se para receber notificação e garantir seu pack da edição limitada!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button">
+                        A embalagem é mesmo eco-friendly?
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Sim! Nossas latas são 100% recicláveis e feitas com 70% de material reciclado. Toda a produção utiliza energia renovável e parte dos lucros é destinada a projetos de reflorestamento.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="content">
+            <h2>Fique por Dentro</h2>
+            <p>Cadastre-se e receba nossas dicas e novidades</p>
+            
+            <form id="newsletterForm">
+                <div class="input-container">
+                    <input type="email" id="emailInput" class="news-input" placeholder="Digite seu e-mail" required>
+                    <button type="submit" id="subscribeBtn" class="news-button">Inscrever</button>
+                </div>
+            </form>
+            
+            <p id="successMessage">Inscrição feita com sucesso!</p>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer>
         <div class="footer-left">
-            <img src="img/icone_logo.svg" alt="Logo Aurora Elixir">
+            <img src="./assets/img/icone_logo.svg" alt="Logo Aurora Elixir">
             <p>Energia limpa para uma vida extraordinária.</p>
             <ul>
                 <li><i class="bi bi-instagram"></i></li> <!--  transf em ícones -->
@@ -157,5 +536,5 @@
     </footer>
 </body>
 
-<script src="script.js"></script>
+<script src="./assets/js/script.js"></script>
 </html>
