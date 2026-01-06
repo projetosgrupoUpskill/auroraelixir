@@ -250,7 +250,7 @@ body {
 /* Nossa Historia  */
 
 .history {
-    background-color: #FAF7ED;
+    background-color: var(--bg);
     margin: 0 auto;
     padding: 60px 20px;
     text-align: center;
