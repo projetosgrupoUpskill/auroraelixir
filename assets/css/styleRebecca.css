@@ -550,4 +550,22 @@ body {
     .values-cards {
         grid-template-columns: 1fr;
     }
-}
+        .input-container {
+            flex-direction: column;
+            gap: 12px; 
+            width: 100%;
+        }
+
+        .news-input {
+            width: 100%;
+            min-width: unset;
+            border-radius: 25px;
+            text-align: left; 
+        }
+            .news-button {
+            width: 50%;
+            padding: 15px;
+            border-radius: 25px;
+        }
+    }
+
