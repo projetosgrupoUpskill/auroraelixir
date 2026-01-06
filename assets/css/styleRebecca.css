@@ -525,6 +525,7 @@ body {
 /* Ajustes finos no modal */
 .modal-content {
     border-radius: 12px;
+    background-color: var(--bg);
 }
 
 .modal-title {
@@ -535,6 +536,12 @@ body {
 .modal-body p {
     font-size: 1rem;
     color: #555;
+}
+
+.bnt-modal {
+    background: var(--green-dark);
+    color: var(--bg);
+    border-radius: 15px;
 }
 
 
