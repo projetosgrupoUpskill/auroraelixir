@@ -240,6 +240,7 @@ body {
     margin: 0;
     padding: 25px;
     color: #3a4d2a;
+    text-align: center;
 }
 
 .container-text h3 {
@@ -253,7 +254,7 @@ body {
 }
 
 .cards-grid {
-    padding: 10% 2%;
+    padding: 4% 2%;
     justify-items: center;
 }
 
