@@ -1,3 +1,12 @@
+:root {
+    --bg: #F5F0E1;
+    --green-dark: #4D6423;
+    --green: #8BC048;
+    --green-medium: #B8E87C;
+    --green-light: #eef5e1;
+    --text-dark: #3e3e3e;
+    --white: #ffffff;
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +15,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #F5F0E1;
+    background-color: var(--bg);
 }
 
 /* HEADER - NAVIGATION - BANNER */
@@ -15,7 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: rgba(240, 237, 230, 0.95);
+    background-color: var(--bg);
     position: relative;
     z-index: 1000;
 }
@@ -141,21 +150,11 @@ body {
     min-height: 90vh;
     display: flex;
     align-items: center;
-    justify-items: flex-start;
-    padding: 4rem;
-    overflow: hidden;
-}
-
-.hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 40% 70% ; 
-    z-index: -1; 
-    transition: all 0.3s ease;
+    justify-items: center;
+    background: url('/assets/img/banner\ header.png');
+    background-size: cover;
+    background-position: right top;
+    padding: 2rem;
 }
 
 .hero-content {
@@ -243,8 +242,7 @@ body {
     text-align: start;
 }
 
-.cards-grid {
-    padding: 4% 2%;
+.cards-grid {    padding: 10% 2%;
     justify-items: center;
 }
 
@@ -425,22 +423,15 @@ footer {
 
 /* ------------ MEDIA QUERIES ---------------*/
 
-@media (max-width: 800px) {
-    .hero-title {
-        font-size: 4rem;
-    }
-
-    .hero-bg {
-        filter: brightness(0.5);
-    }
-}
-
 /* Tablet */
 @media (min-width: 768px) {
     .hero {
         min-height: 100vh;
         width: 100%;
+        aspect-ratio: 1101/796;
+        /* Ajuste para a proporção da sua imagem original */
         background-size: cover;
+        /* Agora ele não cortará, pois o container tem o mesmo formato da foto */
         background-position: center;
     }
 }
@@ -538,6 +529,7 @@ h1 {
     padding: 17px 45px;
     width: auto;
 }
+
 
 
 /* Desktop */
