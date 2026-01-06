@@ -1,3 +1,13 @@
+:root {
+    --bg: #F5F0E1;
+    --green-dark: #4D6423;
+    --green: #8BC048;
+    --green-medium: #B8E87C;
+    --green-light: #eef5e1;
+    --text-dark: #3e3e3e;
+    --white: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
