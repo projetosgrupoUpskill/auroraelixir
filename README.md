@@ -55,6 +55,7 @@ A principal decisão técnica foi a abordagem **Mobile-First**. Reconhecendo que
 
 ## 🔗 Links Úteis
 
+* **Link GitPages** [https://projetosgrupoupskill.github.io/auroraelixir/] (https://projetosgrupoupskill.github.io/auroraelixir/)
 * **Repositório GitHub:** [https://github.com/projetosgrupoUpskill/auroraelixir](https://github.com/projetosgrupoUpskill/auroraelixir)
 
 ---
