@@ -129,7 +129,7 @@ body {
     margin-left: -1rem;
 }
 
-.cta-button {
+.pre-venda-button {
     background-color: var(--green-dark);
     color: var(--white);
     padding: 0.8rem 1.5rem;
@@ -139,6 +139,11 @@ body {
     text-align: center;
     transition: background-color 0.3s ease;
     display: inline-block;
+    justify-self: center;
+}
+
+#lancamento {
+    text-align: center;
 }
 
 .cta-button:hover {
@@ -199,6 +204,7 @@ dialog button:hover {
     object-position: 40% 70% ; 
     z-index: -1; 
     transition: all 0.3s ease;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%);
 }
 
 .hero-content {
@@ -338,9 +344,8 @@ dialog button:hover {
     padding: 30px 20px;
     max-width: 800px;
     width: 100%;
+    margin: 80px auto;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-    justify-self: center;
-
 }
 
 .header {

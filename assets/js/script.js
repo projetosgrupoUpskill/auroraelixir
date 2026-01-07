@@ -53,22 +53,38 @@ let x = setInterval(function () {
 
 //BOTÃO PRÉ VENDA - POPUP
 function showPopup(message) {
-  const dialog = document.createElement('dialog');
-  
-  dialog.innerHTML = `
-    <p>${message}</p>
-    <button onclick="this.closest('dialog').close(); this.closest('dialog').remove()">
-      OK
-    </button>
-  `;
-  
-  document.body.appendChild(dialog);
-  dialog.showModal();
+    const dialog = document.createElement('dialog');
+
+    // Aplicando backdrop escuro
+    dialog.style.padding = '0';
+    dialog.style.border = 'none';
+
+    dialog.innerHTML = `
+        <div class="modal-content text-center p-4">
+            <div class="modal-header border-0">
+                <h5 class="modal-title w-100">Aviso</h5>
+                <button type="button" class="btn-close" 
+                    onclick="this.closest('dialog').close(); this.closest('dialog').remove()" 
+                    aria-label="Fechar">
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>${message}</p>
+                <button class="bnt-modal mt-3" 
+                    onclick="this.closest('dialog').close(); this.closest('dialog').remove()">
+                    OK
+                </button>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(dialog);
+    dialog.showModal();
 }
 
-document.getElementById('btn-prevenda').addEventListener('click', function(e) {
-  e.preventDefault();
-  showPopup('A pré-venda ainda não está disponível. Explore nossa página e fique por dentro das novidades!');
+document.getElementById('btn-prevenda').addEventListener('click', function (e) {
+    e.preventDefault();
+    showPopup('A pré-venda ainda não está disponível. Explore nossa página e fique por dentro das novidades!');
 });
 
 
@@ -118,9 +134,9 @@ const goToLancamento = document.getElementById('goToLancamento');
 
 goToLancamento.addEventListener('click', (e) => {
     e.preventDefault();
-    productModal.hide();      
+    productModal.hide();
     const lancamentoSection = document.getElementById('lancamento');
-    lancamentoSection.scrollIntoView({ behavior: 'smooth' }); 
+    lancamentoSection.scrollIntoView({ behavior: 'smooth' });
 });
 
 
