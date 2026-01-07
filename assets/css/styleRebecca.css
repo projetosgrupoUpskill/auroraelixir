@@ -388,7 +388,7 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--green-dark);
-    background-color: #ffffff;
+    background-color: var(--white);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
@@ -404,7 +404,7 @@ body {
 
 .accordion-button:not(.collapsed) {
     color: var(--green-dark);
-    background-color: #ffffff;
+    background-color: var(--white);
     border: 2px solid var(--green-dark);
     border-bottom: none;
     border-radius: 20px 20px 0 0 !important;
@@ -438,7 +438,7 @@ body {
 }
 
 .accordion-collapse {
-    background-color: #ffffff;
+    background-color: var(--white);
     border: 2px solid var(--green-dark);
     border-top: none;
     border-radius: 0 0 20px 20px;
@@ -449,7 +449,7 @@ body {
 .accordion-body {
     padding: 0 28px 25px 28px;
     color: var(--green-dark);
-    background-color: #ffffff !important;
+    background-color: var(--white) !important;
     opacity: 0;
     transform: translateY(-8px);
     transition: all 0.3s ease;
@@ -476,7 +476,7 @@ body {
 }
 
 .newsletter-section p {
-    color: #f0f0f0;
+    color: var(--bg);
     margin-bottom: 30px;
 }
 
@@ -516,7 +516,7 @@ body {
 }
 
 #successMessage {
-    color: #ffffff;
+    color: var(--white);
     margin-top: 20px;
     display: none; 
 }
