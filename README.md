@@ -49,6 +49,7 @@ A principal decisão técnica foi a abordagem **Mobile-First**. Reconhecendo que
 ### Funcionalidades Implementadas
 
 * **Contagem Decrescente:** Timer dinâmico para o lançamento da primeira edição limitada (10.000 unidades).
+* **Acordeão Interativo:** Permite que o usuário expanda e recolha seções de conteúdo dinamicamente, tornando a navegação mais organizada e intuitiva.
 * **Cards de Sabores:** Interface interativa para explorar as variantes (Aurora, Forest, Ocean e Sunset).
 * **Newsletter:** Formulário de captação de leads ("Fique por Dentro") para marketing pós-lançamento.
 
