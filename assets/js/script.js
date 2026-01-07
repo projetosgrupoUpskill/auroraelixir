@@ -1,3 +1,4 @@
+//MENU HAMBURGER
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
 
@@ -6,7 +7,6 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Fechar menu ao clicar em um link
 const navLinks = document.querySelectorAll('.nav-links a');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -15,7 +15,6 @@ navLinks.forEach(link => {
     });
 });
 
-// Fechar menu ao clicar fora
 document.addEventListener('click', (e) => {
     if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
         hamburger.classList.remove('active');
@@ -24,31 +23,25 @@ document.addEventListener('click', (e) => {
 });
 
 
-// Set the date we're counting down to
+// CONTADOR
 let countDownDate = new Date("Jan 30, 2026 23:59:59").getTime();
 
-// Update the count down every 1 second
 let x = setInterval(function () {
 
-    // Get today's date and time
     let now = new Date().getTime();
 
-    // Find the distance between now and the count down date
     let distance = countDownDate - now;
 
-    // Time calculations for days, hours, minutes and seconds
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
     document.getElementById("days").textContent = days;
     document.getElementById("hours").textContent = hours;
     document.getElementById("minutes").textContent = minutes;
     document.getElementById("seconds").textContent = seconds;
 
-    // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("days").textContent = "0";
@@ -58,20 +51,35 @@ let x = setInterval(function () {
     }
 }, 1000);
 
-document.querySelector('.cta-button').addEventListener('click', function () {
-    alert('Você será notificado quando o lançamento acontecer!');
+//BOTÃO PRÉ VENDA - POPUP
+function showPopup(message) {
+  const dialog = document.createElement('dialog');
+  
+  dialog.innerHTML = `
+    <p>${message}</p>
+    <button onclick="this.closest('dialog').close(); this.closest('dialog').remove()">
+      OK
+    </button>
+  `;
+  
+  document.body.appendChild(dialog);
+  dialog.showModal();
+}
+
+document.getElementById('btn-prevenda').addEventListener('click', function(e) {
+  e.preventDefault();
+  showPopup('A pré-venda ainda não está disponível. Explore nossa página e fique por dentro das novidades!');
 });
 
 
-// Escolha sua energia
+
+//ESCOLHA SUA ENERGIA
 const flavorCards = document.querySelectorAll('.flavors-card');
 const flavorDetails = document.querySelectorAll('.flavor-detail');
 
 
 function changeFlavor(flavorId) {
-
     flavorCards.forEach(card => card.classList.remove('active'));
-
     flavorDetails.forEach(detail => detail.classList.remove('active'));
 
     const activeCard = document.querySelector(`.flavors-card[data-flavor="${flavorId}"]`);
@@ -96,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     changeFlavor('aurora');
 });
 
-// Botões "Experimentar"
+//BOTÕES EXPERIMENTAR
 const ctaButtons = document.querySelectorAll('.details-button');
 const productModal = new bootstrap.Modal(document.getElementById('productModal'));
 
@@ -116,8 +124,7 @@ goToLancamento.addEventListener('click', (e) => {
 });
 
 
-/* Perguntas Frequentes */
-
+//FAQ
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.accordion-button');
 
@@ -128,11 +135,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const isOpen = collapse.classList.contains('show');
 
-            // Fecha todos
             document.querySelectorAll('.accordion-collapse').forEach(c => c.classList.remove('show'));
             document.querySelectorAll('.accordion-button').forEach(b => b.classList.add('collapsed'));
 
-            // Abre apenas o clicado se estava fechado
             if (!isOpen) {
                 collapse.classList.add('show');
                 button.classList.remove('collapsed');
@@ -141,8 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-/* Newsletter */
-
+//NEWSLETTER
 document.getElementById('newsletterForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
