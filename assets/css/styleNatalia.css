@@ -25,7 +25,8 @@ body {
     align-items: center;
     padding: 1rem 2rem;
     background-color: var(--bg);
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 1000;
 }
 
